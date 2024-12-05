@@ -1,25 +1,98 @@
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    background-image: url("backg.jpg");
-    background-size: cover;
-    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fafafa;
 }
 
-
-
-header{
-    text-align: center; 
-}
-
-.navbar {
+header {
+    background-color: #ab387f;
+    color: #fff;
+    padding: 20px 0;
     text-align: center;
 }
 
-.aboutme {
-    text-align: center;
-    background-color: rgba(58, 58, 58, 0.635);
+main {
     padding: 20px;
+    max-width: 800px;
     margin: 20px auto;
-    max-width: 600px;
-    border: 2px solid #444;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    border-bottom: 2px solid #333;
+    padding-bottom: 10px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    background: #e4e4e4;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+footer {
+    background-color: #ab387f;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+}
+
+.navbar ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar ul li {
+    margin: 0 10px;
+}
+
+.navbar ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    background-color: #444;
+}
+
+.navbar ul li a:hover {
+    background-color: #555;
+}
+
+.about-me p, #projects ul {
+    line-height: 1.6;
+}
+
+#projects ul li {
+    margin-bottom: 10px;
+}
+
+@media (max-width: 600px) {
+    header, footer {
+        padding: 15px 0;
+    }
+    
+    main {
+        padding: 15px;
+        margin: 10px;
+    }
+    
+    .navbar ul {
+        flex-direction: column;
+    }
+
+    .navbar ul li {
+        margin: 5px 0;
+    }
 }
